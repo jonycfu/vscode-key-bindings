@@ -93,7 +93,7 @@
     "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
-    "key": "cmd+k cmd+h",
+    "key": "cmd+b",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -161,11 +161,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+cmd+r",
-    "command": "editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "f2",
     "command": "-editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -217,5 +212,39 @@
   {
     "key": "ctrl+cmd+j",
     "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "f13",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "f1",
+    "command": "editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "workbench.action.terminal.newInActiveWorkspace"
+  },
+  {
+    "key": "shift+alt+5",
+    "command": "editor.emmet.action.matchTag"
   }
 ]
